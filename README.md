@@ -10,6 +10,11 @@ yarn
 npm install
 ```
 
+copy .env from .env.example
+```bash
+cp .env.example .env
+```
+
 run the development server:
 ```bash
 npm run dev
