@@ -1,0 +1,52 @@
+{
+  "name": "nextjs-test-show-restaurants",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "prettier": "prettier --write .",
+    "format": "yarn prettier",
+    "lint-staged": "lint-staged",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "^5.8.4",
+    "@tanstack/react-query-devtools": "^5.8.4",
+    "axios": "^1.6.2",
+    "js-cookie": "^3.0.5",
+    "next": "14.0.3",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "@tanstack/eslint-plugin-query": "^5.8.4",
+    "@types/js-cookie": "^3.0.6",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@typescript-eslint/eslint-plugin": "^6.4.0",
+    "autoprefixer": "^10.0.1",
+    "eslint": "^8.0.1",
+    "eslint-config-airbnb-typescript": "^17.1.0",
+    "eslint-config-next": "14.0.3",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-config-standard-with-typescript": "^40.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0 || ^16.0.0 ",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-react": "^7.33.2",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.1.0",
+    "postcss": "^8",
+    "prettier": "3.1.0",
+    "tailwindcss": "^3.3.0",
+    "typescript": "*"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx}": "eslint --cache --fix",
+    "src/**/*.{js,jsx,ts,tsx,css,scss,md}": "prettier --write --ignore-unknown"
+  }
+}
